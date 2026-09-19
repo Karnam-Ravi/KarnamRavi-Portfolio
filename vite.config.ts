@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react';
  *
  * Vercel (and any root-domain host) serves from /, so that is the default and
  * what `dev` has always used. GitHub Pages serves this project from
- * /Karnam-Ravi-Portfolio/ instead, so the Pages workflow sets DEPLOY_TARGET=pages
+ * /KarnamRavi-Portfolio/ instead, so the Pages workflow sets DEPLOY_TARGET=pages
  * and only then is that prefix baked into the build. Getting this wrong is
  * invisible until deploy: every asset 404s and you get a blank page.
  */
@@ -16,6 +16,6 @@ export default defineConfig(({ command, isPreview }) => {
 
   return {
     plugins: [react()],
-    base: isBuild && forPages ? '/Karnam-Ravi-Portfolio/' : '/',
+    base: isBuild && forPages ? '/KarnamRavi-Portfolio/' : '/',
   };
 });
