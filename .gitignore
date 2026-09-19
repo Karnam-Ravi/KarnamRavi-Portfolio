@@ -1,0 +1,20 @@
+# dependencies
+node_modules
+
+# build output
+dist
+*.tsbuildinfo
+
+# editor / OS
+*.local
+.DS_Store
+.vscode
+
+# Personal document — contains phone number, date of birth and gender.
+# Deliberately kept out of the public repo; the site only uses details that
+# are already public on the page itself.
+resume.pdf
+
+# Unreferenced camera original left in the project root. The portraits the site
+# actually uses are the encoded copies in public/portrait-*.webp.
+IMG_4712.JPG
